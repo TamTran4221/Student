@@ -8,7 +8,7 @@
                     @method('PUT')
                     <div class="form-group">
                         <label for="exampleInputEmail1">Họ và tên</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" name="ho_ten" value="{{$student->ho_ten}}">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="ho_ten" value="{{$student->ho__va_ten}}">
                         
                     </div>
                     <div class="form-group">

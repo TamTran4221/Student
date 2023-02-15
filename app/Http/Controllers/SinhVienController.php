@@ -49,13 +49,9 @@ class SinhVienController extends Controller
             $file_name = '';
         }
         $request->merge(['hinh_anh'=> $file_name]);
-        try {
             SinhVien::create($request->all());
             return redirect()->route('sinh-vien.index');
-        } catch (\Throwable $th) {
-            //throw $th;
-            dd($th);
-        }
+        
     }
 
     /**
@@ -102,13 +98,9 @@ class SinhVienController extends Controller
         }
 
         $request->merge(['hinh_anh'=> $file_name]);
-        try {
             $student->update($request->all());
-            return redirect()->route('student.index');
-        } catch (\Throwable $th) {
-            //throw $th;
-            dd($th);
-        }
+            return redirect()->route('sinh-vien.index');
+        
     }
 
     /**

@@ -7,7 +7,7 @@
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputEmail1">Họ và tên</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" name="ho_ten">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="ho_va_ten">
                         
                     </div>
                     <div class="form-group">
@@ -31,12 +31,12 @@
                         <label for="exampleInputPassword1">Giới tính</label>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gio_tinh" id="" value="0"> Nữ
+                                <input class="form-check-input" type="radio" name="gioi_tinh" id="" value="0"> Nữ
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gio_tinh" id="" value="1" checked> Nam
+                                <input class="form-check-input" type="radio" name="gioi_tinh" id="" value="1" checked> Nam
                             </label>
                         </div>
                     </div>
