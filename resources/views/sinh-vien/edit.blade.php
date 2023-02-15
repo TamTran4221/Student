@@ -34,12 +34,12 @@
                         <label for="exampleInputPassword1">Giới tính</label>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gio_tinh" id="" value="0" {{$student->gio_tinh == 0 ? 'checked' : ''}}> Nam
+                                <input class="form-check-input" type="radio" name="gioi_tinh" id="" value="0" {{$student->gioi_tinh == 0 ? 'checked' : ''}}> Nam
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gio_tinh" id="" value="1" {{$student->gio_tinh == 1 ? 'checked' : ''}}> Nữ
+                                <input class="form-check-input" type="radio" name="gioi_tinh" id="" value="1" {{$student->gioi_tinh == 1 ? 'checked' : ''}}> Nữ
                             </label>
                         </div>
                     </div>
