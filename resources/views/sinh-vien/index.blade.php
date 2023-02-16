@@ -17,17 +17,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($students  as $data)
+                    @foreach($students  as $value)
                     <tr>
                         <td scope="row">{{$loop->iteration}}</td>
-                        <td>{{$data->ho_va_ten}}</td>
-                        <td>{{$data->que_quan}}</td>
-                        <td>{{$data->gioi_tinh }}</td>
-                        <td>{{$data->lop_hoc_id}}</td>
+                        <td>{{$value->ho_va_ten}}</td>
+                        <td><img src="{{url('uploads')}}/{{$value->hinh_anh}}" alt="" width="100px"></td>
+                        <td>{{$value->que_quan}}</td>
+                        <td>{{$value->gio_tinh ? 'Nam' : 'Nữ'}}</td>
+                        <td>{{$value->lop_hoc_id}}</td>
                         <td>
-                            <a href="{{route('sinh-vien.edit',$data)}}" class="btn btn-primary">Sửa</a>
+                            <a href="{{route('sinh-vien.edit',$value)}}" class="btn btn-primary">Sửa</a>
 
-                            <form action="{{route('sinh-vien.destroy',$data)}}" method="POST">
+                            <form action="{{route('sinh-vien.destroy',$value)}}" method="POST">
                                 @method('DELETE')
                                 @csrf
                                 <button type="submit" class="btn btn-danger">Xóa</button>
