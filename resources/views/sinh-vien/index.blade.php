@@ -23,7 +23,7 @@
                         <td>{{$value->ho_va_ten}}</td>
                         <td><img src="{{url('uploads')}}/{{$value->hinh_anh}}" alt="" width="100px"></td>
                         <td>{{$value->que_quan}}</td>
-                        <td>{{$value->gio_tinh ? 'Nam' : 'Nữ'}}</td>
+                        <td>{{$value->gioi_tinh ? 'Nam' : 'Nữ'}}</td>
                         <td>{{$value->lop_hoc_id}}</td>
                         <td>
                             <a href="{{route('sinh-vien.edit',$value)}}" class="btn btn-primary">Sửa</a>

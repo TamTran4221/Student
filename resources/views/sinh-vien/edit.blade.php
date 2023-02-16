@@ -15,8 +15,7 @@
                         <label for="exampleInputEmail1">Lớp học</label>
                         <select class="form-control" name="lop_hoc_id" id="">
                             @foreach($lop_hoc as $value)
-                                <option value="{{$value->id}}" {{$value->id == $student->lop_hoc_id ? 'selected' : ''}}>
-                                    {{$value->ten_lop}}</option>
+                                <option value="{{$value->id}}" {{$value->id == $student->lop_hoc_id ? 'selected' : ''}}>{{$value->ten_lop}}</option>
                             @endforeach
                           </select>
                         
